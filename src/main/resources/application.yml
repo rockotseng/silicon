@@ -1,0 +1,9 @@
+spring:
+  data:
+    mongodb:
+      port: 0 # Random port for embedded MongoDB
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
