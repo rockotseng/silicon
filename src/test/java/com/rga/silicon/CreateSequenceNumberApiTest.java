@@ -3,6 +3,7 @@ package com.rga.silicon;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +23,7 @@ import com.rga.silicon.web.SequenceNumberDto;
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 // @Slf4j
+@Ignore
 public class CreateSequenceNumberApiTest {
 
     @Autowired

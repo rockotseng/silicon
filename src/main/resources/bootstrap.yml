@@ -1,3 +1,31 @@
 spring:
   application:
     name: silicon
+  cloud:
+    config:
+      fail-fast: false
+      uri: http://localhost:8888
+---
+spring:
+  profiles: sit,uat,prod
+  cloud:
+    config:
+      fail-fast: true
+---
+spring:
+  profiles: sit,uat,prod
+  cloud:
+    config:
+      uri: http://localhost:8888
+---
+spring:
+  profiles: uat
+  cloud:
+    config:
+      uri: http://UAT-RA:8888
+---
+spring:
+  profiles: prod
+  cloud:
+    config:
+      uri: http://PROD-RA:8888

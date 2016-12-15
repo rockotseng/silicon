@@ -2,6 +2,7 @@ spring:
   data:
     mongodb:
       port: 0 # Random port for embedded MongoDB
+      database: silicon
 
 eureka:
   client:

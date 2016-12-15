@@ -4,5 +4,6 @@ public enum SequenceNumberType {
 
     POLICY,
     HOLDER,
-    CLAIM;
+    CLAIM,
+    BLOCK;
 }
