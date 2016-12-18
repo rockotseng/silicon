@@ -1,10 +1,27 @@
 spring:
   data:
     mongodb:
-      port: 0 # Random port for embedded MongoDB
+      port: 0
       database: silicon
 
 eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+
+---
+spring:
+  profiles: dev
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 10
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8989/eureka/
