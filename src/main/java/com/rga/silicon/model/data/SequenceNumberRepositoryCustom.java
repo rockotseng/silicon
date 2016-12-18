@@ -1,4 +1,7 @@
-package com.rga.silicon.domain;
+package com.rga.silicon.model.data;
+
+import com.rga.silicon.model.SequenceNumber;
+import com.rga.silicon.model.SequenceNumberType;
 
 public interface SequenceNumberRepositoryCustom {
 

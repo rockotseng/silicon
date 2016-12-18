@@ -1,4 +1,4 @@
-package com.rga.silicon.domain;
+package com.rga.silicon.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Version;

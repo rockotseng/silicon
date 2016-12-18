@@ -1,4 +1,4 @@
-package com.rga.silicon.domain;
+package com.rga.silicon.model;
 
 public enum SequenceNumberType {
 

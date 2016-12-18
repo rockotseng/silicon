@@ -24,7 +24,7 @@ class CreateSpec extends SequencenumberCreateBase {
 		and:
 			DocumentContext parsedJson = JsonPath.parse(response.body.asString())
 			assertThatJson(parsedJson).field("type").isEqualTo("BLOCK")
-			assertThatJson(parsedJson).field("number").isNull()
+			assertThatJson(parsedJson).field("number").isEqualTo(1)
 			isCurrentYearMonth(parsedJson.read('$.yearMonth'))
 	}
 

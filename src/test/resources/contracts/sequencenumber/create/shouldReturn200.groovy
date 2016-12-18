@@ -20,7 +20,7 @@ Contract.make {
         body([
             yearMonth: $(execute('isCurrentYearMonth($it)')),
             type: 'BLOCK',
-            number: $(client(1), server())
+            number: 1
         ])
     }
 }

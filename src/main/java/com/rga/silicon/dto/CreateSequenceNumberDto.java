@@ -1,6 +1,6 @@
-package com.rga.silicon.web;
+package com.rga.silicon.dto;
 
-import com.rga.silicon.domain.SequenceNumberType;
+import com.rga.silicon.model.SequenceNumberType;
 
 import lombok.Value;
 

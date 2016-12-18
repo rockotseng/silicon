@@ -1,4 +1,4 @@
-package com.rga.silicon.service;
+package com.rga.silicon.model.service;
 
 import java.time.YearMonth;
 import java.time.ZoneOffset;
@@ -6,9 +6,9 @@ import java.time.ZoneOffset;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.rga.silicon.domain.SequenceNumber;
-import com.rga.silicon.domain.SequenceNumberRepository;
-import com.rga.silicon.domain.SequenceNumberType;
+import com.rga.silicon.model.SequenceNumber;
+import com.rga.silicon.model.SequenceNumberType;
+import com.rga.silicon.model.data.SequenceNumberRepository;
 
 import lombok.RequiredArgsConstructor;
 
