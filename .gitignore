@@ -24,4 +24,4 @@ nbdist/
 .nb-gradle/
 
 ### Spring Cloud Contract Generated Test  ###
-src/generated-test/groovy
+src/generated-test/groovy/**

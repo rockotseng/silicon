@@ -5,20 +5,23 @@ import org.springframework.cloud.contract.spec.Contract
 Contract.make {
     request {
         method 'POST'
-        urlPath('/sequence-numbers')
+        url('/sequence-numbers')
         body("""
             {
                 "type": "BLOCK"
             }
             """)
         headers {
-            header('Content-Type': 'application/json') //contentType('application/json')
+            contentType(applicationJson())
         }
     }
     response {
         status 200
+        headers {
+            contentType(applicationJson())
+        }
         body([
-            yearMonth: $(execute('isCurrentYearMonth($it)')),
+            yearMonth: $(client('2016-12'), server(execute('isCurrentYearMonth($it)'))),
             type: 'BLOCK',
             number: 1
         ])

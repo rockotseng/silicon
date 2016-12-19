@@ -1,5 +1,6 @@
 package com.rga.silicon.facade;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,7 +15,7 @@ import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequestMapping("/sequence-numbers")
-@RequiredArgsConstructor
+@RequiredArgsConstructor(onConstructor = @__(@Autowired) )
 public class SequenceNumberFacade {
 
     private final SequenceNumberService sequenceNumberService;
