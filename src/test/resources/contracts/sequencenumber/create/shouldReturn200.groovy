@@ -12,7 +12,7 @@ Contract.make {
             }
             """)
         headers {
-            contentType(applicationJson())
+            contentType(applicationJsonUtf8())
         }
     }
     response {
