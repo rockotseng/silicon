@@ -6,4 +6,5 @@ public enum SequenceNumberType {
     HOLDER,
     CLAIM,
     BLOCK;
+
 }
