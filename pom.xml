@@ -110,9 +110,6 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<executable>true</executable>
-					<embeddedLaunchScriptProperties>
-						<logFolder>/var/log/allegro/${project.artifactId}/${project.artifactId}.log</logFolder>
-					</embeddedLaunchScriptProperties>
 				</configuration>
 			</plugin>
 
