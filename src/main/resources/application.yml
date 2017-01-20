@@ -6,8 +6,7 @@ spring:
 
 eureka:
   client:
-    register-with-eureka: false
-    fetch-registry: false
+    enabled: false
 
 ---
 spring:
@@ -21,7 +20,6 @@ eureka:
   instance:
     lease-renewal-interval-in-seconds: 10
   client:
-    register-with-eureka: true
-    fetch-registry: true
+    enabled: true
     service-url:
       defaultZone: http://localhost:8989/eureka/
