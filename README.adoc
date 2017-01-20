@@ -1,6 +1,18 @@
 = Silicon
 
-Sequence Number Service
+A Cross-JVM Sequence Number Service
 
-== TODO
-. Reference Number Service
+== Featuring
+- Spring Boot
+- Spring Data (MongoDB)
+- Spring Cloud (Config service, Discovery service, Consumer Driven Contracts)
+- Lombok
+
+== Database
+- MongoDB
+
+== Testing Framework
+- Spock
+
+== Build Tool
+- Maven
